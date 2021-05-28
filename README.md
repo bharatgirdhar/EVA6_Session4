@@ -120,7 +120,7 @@ The excel sheet is present in `./Assignment1/`. Here's a screenshot of the file.
 
 The notebook is saved in the main folder EVA6_Session_4_Assignment2.ipynb
 
-Test Accuracy: `99.30%`.
+### Test Accuracy: `99.33%`.
 
 ## Model Architecture :
 ![Model Architecture](./Assignment1/Model_Architecture.PNG)
