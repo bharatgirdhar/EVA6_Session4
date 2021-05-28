@@ -112,7 +112,7 @@ Increasing the learning leads to faster convergence in 100 epochs. The total err
 
 ### Screenshot
 
-The excel sheet is present in `./Assignment1/`. Here's a screenshot of the file.
+The excel sheet is present in `./Assignment1/Training_NN_Excel.xlsx`. Here's a screenshot of the file.
 
 ![backprop](./Assignment1/Details.PNG)
 
