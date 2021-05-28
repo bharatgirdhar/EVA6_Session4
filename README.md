@@ -93,31 +93,31 @@ Once we the gradients, we update the weights using the following equation.
 Increasing the learning leads to faster convergence in 100 epochs. The total error reduces quickly for a higher learning rate.
 
 - LR = 0.1
-  ![LearningRate=0.1](./Assignment1/0.1..png)
+  ![LearningRate=0.1](./Assignment1/0.1..PNG)
 
 - LR = 0.2
-  ![LearningRate=0.2](./Assignment1/lr_0_2.png)
+  ![LearningRate=0.2](./Assignment1/0.2..PNG)
 
 - LR = 0.5
-  ![LearningRate=0.3](./Assignment1/lr_0_5.png)
+  ![LearningRate=0.3](./Assignment1/0.5..PNG)
 
 - LR = 0.8
-  ![LearningRate=0.4](./Assignment1/lr_0_8.png)
+  ![LearningRate=0.4](./Assignment1/0.8..PNG)
 
 - LR = 1.0
-  ![LearningRate=0.5](./Assignment1/lr_1_0.png)
+  ![LearningRate=0.5](./Assignment1/1..PNG)
 
 - LR = 2.0
-  ![LearningRate=0.6](./Assignment1/lr_2_0.png)
+  ![LearningRate=0.6](./Assignment1/2..PNG)
 
 ### Screenshot
 
-The excel sheet is present in `./part1/`. Here's a screenshot of the file.
+The excel sheet is present in `./Assignment1/`. Here's a screenshot of the file.
 
-![backprop](./part1/backprop.png)
+![backprop](./Assignment1/Details.PNG)
 
 ## Part 2
 
-The notebook is saved in the folder `./S4/`.
+The notebook is saved in the main folder 
 
-Test Accuracy: `99.44%`.
+Test Accuracy: `99.30%`.
