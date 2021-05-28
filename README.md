@@ -128,9 +128,9 @@ Test Accuracy: `99.30%`.
 ## Training - EPOCS
 
 ### Intermediate EPOCS
-![Intermediate EPOCS](./Assignment1/Intermediate_EPOCS.PNG)
+![Intermediate EPOCS](./Assignment1/Intermediate_EPOC.PNG)
 
 
-### FInal EPOC
+### FINAL EPOC
 ![Final EPOC](./Assignment1/Final_EPOC.PNG)
 
