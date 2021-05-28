@@ -14,7 +14,7 @@ We have an input of dimenisonality 2 which is fed to the network. The inputs are
 The network consists of an input layers, a hidden layers, and an output layer. Each layer is followed by an activation function to introduce non-linearity into the network.
 
 - Input: `x1, x2`
-- output: `y1, y2`
+- output: `t1, t2`
 - Weights: `w1, w2, w3, w4, w5, w6, w7, w8`
 - Intermediate outputs: `h1, a_h1, o1, o2`
 - Final Output: `a_o1, a_o2`
@@ -52,9 +52,9 @@ Activations of these outputs.
 
 Once we have the output from the network, we calculate the Mean Squared Error loss using our actual outputs.
 
-`E1 = 0.5 * (y1 - a_o1)²`
+`E1 = 0.5 * (t1 - a_o1)²`
 
-`E2 = 0.5 * (y2 - a_o2)²`
+`E2 = 0.5 * (t2 - a_o2)²`
 
 Finally, we calculate the total loss using which we'll perform backpropagation.
 
@@ -66,21 +66,21 @@ During backpropagation, we first calculate the derivative of the total error wit
 
 The final equations are:
 
-`∂E_Total/∂w8 = (a_o2 - y2) * a_o2 * (1 - a_o2) * a_h2`
+`∂E_Total/∂w8 = (a_o2 - t2) * a_o2 * (1 - a_o2) * a_h2`
 
 `∂E_Total/∂w7 = (a_o2 - y2) * a_o2 * (1 - a_o2) * a_h1`
 
-`∂E_Total/∂w6 = (a_o1 - y1) * a_o1 * (1 - a_o1) * a_h2`
+`∂E_Total/∂w6 = (a_o1 - t1) * a_o1 * (1 - a_o1) * a_h2`
 
-`∂E_Total/∂w5 = (a_o1 - y1) * a_o1 * (1 - a_o1) * a_h1`
+`∂E_Total/∂w5 = (a_o1 - t1) * a_o1 * (1 - a_o1) * a_h1`
 
-`∂E_Total/∂w4 = [(a_o1 - y1) * a_o1 * (1 - a_o1) * w6 + (a_o2 - y2) * a_o2 * (1 - a_o2) * w8] * a_h2 * (1 - a_h2) * x2`
+`∂E_Total/∂w4 = [(a_o1 - t1) * a_o1 * (1 - a_o1) * w6 + (a_o2 - t2) * a_o2 * (1 - a_o2) * w8] * a_h2 * (1 - a_h2) * x2`
 
-`∂E_Total/∂w3 = [(a_o1 - y1) * a_o1 * (1 - a_o1) * w6 + (a_o2 - y2) * a_o2 * (1 - a_o2) * w8] * a_h2 * (1 - a_h2) * x1`
+`∂E_Total/∂w3 = [(a_o1 - t1) * a_o1 * (1 - a_o1) * w6 + (a_o2 - t2) * a_o2 * (1 - a_o2) * w8] * a_h2 * (1 - a_h2) * x1`
 
-`∂E_Total/∂w2 = [(a_o1 - y1) * a_o1 * (1 - a_o1) * w5 + (a_o2 - y2) * a_o2 * (1 - a_o2) * w7] * a_h1 * (1 - a_h1) * x2`
+`∂E_Total/∂w2 = [(a_o1 - t1) * a_o1 * (1 - a_o1) * w5 + (a_o2 - t2) * a_o2 * (1 - a_o2) * w7] * a_h1 * (1 - a_h1) * x2`
 
-`∂E_Total/∂w1 = [(a_o1 - y1) * a_o1 * (1 - a_o1) * w5 + (a_o2 - y2) * a_o2 * (1 - a_o2) * w7] * a_h1 * (1 - a_h1) * x1`
+`∂E_Total/∂w1 = [(a_o1 - t1) * a_o1 * (1 - a_o1) * w5 + (a_o2 - t2) * a_o2 * (1 - a_o2) * w7] * a_h1 * (1 - a_h1) * x1`
 
 Once we the gradients, we update the weights using the following equation.
 
@@ -93,7 +93,7 @@ Once we the gradients, we update the weights using the following equation.
 Increasing the learning leads to faster convergence in 100 epochs. The total error reduces quickly for a higher learning rate.
 
 - LR = 0.1
-  ![LearningRate=0.1](./Assignment1/lr_0_1.png)
+  ![LearningRate=0.1](./Assignment1/0.1..png)
 
 - LR = 0.2
   ![LearningRate=0.2](./Assignment1/lr_0_2.png)
