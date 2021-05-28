@@ -68,7 +68,7 @@ The final equations are:
 
 `∂E_Total/∂w8 = (a_o2 - t2) * a_o2 * (1 - a_o2) * a_h2`
 
-`∂E_Total/∂w7 = (a_o2 - y2) * a_o2 * (1 - a_o2) * a_h1`
+`∂E_Total/∂w7 = (a_o2 - t2) * a_o2 * (1 - a_o2) * a_h1`
 
 `∂E_Total/∂w6 = (a_o1 - t1) * a_o1 * (1 - a_o1) * a_h2`
 
@@ -122,7 +122,15 @@ The notebook is saved in the main folder EVA6_Session_4_Assignment2.ipynb
 
 Test Accuracy: `99.30%`.
 
-Architecture Model:
-./Assignment1/Model_Architecture.PNG
+## Model Architecture :
+![Model Architecture](./Assignment1/Model_Architecture.PNG)
 
+## Training - EPOCS
+
+### Intermediate EPOCS
+![Intermediate EPOCS](./Assignment1/Intermediate_EPOCS.PNG)
+
+
+### FInal EPOC
+![Final EPOC](./Assignment1/Final_EPOC.PNG)
 
