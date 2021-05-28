@@ -118,6 +118,11 @@ The excel sheet is present in `./Assignment1/`. Here's a screenshot of the file.
 
 ## Part 2
 
-The notebook is saved in the main folder 
+The notebook is saved in the main folder EVA6_Session_4_Assignment2.ipynb
 
 Test Accuracy: `99.30%`.
+
+Architecture Model:
+./Assignment1/Model_Architecture.PNG
+
+
